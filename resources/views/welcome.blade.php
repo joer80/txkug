@@ -80,6 +80,8 @@
             <div class="content">
                 <div class="title m-b-md">
                     Can you see me now?
+
+                    here is another update.
                 </div>
 
                 <div class="links">
