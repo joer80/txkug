@@ -11,5 +11,12 @@ const { mix } = require('laravel-mix');
  |
  */
 
-mix.js('resources/assets/js/app.js', 'public/js')
-   .sass('resources/assets/sass/app.scss', 'public/css');
+// mix.js('resources/assets/js/app.js', 'public/js')
+//     .sass('resources/assets/sass/app.scss', 'public/css');
+
+mix.combine([
+        'resources/assets/css/bootstrap.css',
+        'resources/assets/css/mdb.css'], 'public/css/all.css')
+    .copy('resources/assets/css/welcome.css', 'public/css')
+    .copy('resources/assets/js/mdb', 'public/js')
+    .copy('resources/assets/font/roboto', 'public/font/roboto');

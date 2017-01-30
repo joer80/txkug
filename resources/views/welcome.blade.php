@@ -1,95 +1,113 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.app')
 
-        <title>Laravel</title>
+@section('content')
 
-        <!-- Fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+    <section class="section feature-box" id="app-todo">
+        <h1 class="section-heading wow fadeIn" data-wow-delay="0.2s">Stuff we need to do</h1>
 
-        <!-- Styles -->
-        <style>
-            html, body {
-                background-color: #fff;
-                color: #636b6f;
-                font-family: 'Raleway', sans-serif;
-                font-weight: 100;
-                height: 100vh;
-                margin: 0;
-            }
+        <div class="row features-small">
+            <div class="col-md-3 offset-3">
+                <h2>Public</h2>
+                <ul>
+                    <li>Upcoming events</li>
+                    <li>News</li>
+                    <li>Twitter Feed</li>
+                    <li>Facebook Feed</li>
+                    <li>Meeting Checkin</li>
+                </ul>
+            </div>
 
-            .full-height {
-                height: 100vh;
-            }
-
-            .flex-center {
-                align-items: center;
-                display: flex;
-                justify-content: center;
-            }
-
-            .position-ref {
-                position: relative;
-            }
-
-            .top-right {
-                position: absolute;
-                right: 10px;
-                top: 18px;
-            }
-
-            .content {
-                text-align: center;
-            }
-
-            .title {
-                font-size: 84px;
-            }
-
-            .links > a {
-                color: #636b6f;
-                padding: 0 25px;
-                font-size: 12px;
-                font-weight: 600;
-                letter-spacing: .1rem;
-                text-decoration: none;
-                text-transform: uppercase;
-            }
-
-            .m-b-md {
-                margin-bottom: 30px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="flex-center position-ref full-height">
-            @if (Route::has('login'))
-                <div class="top-right links">
-                    @if (Auth::check())
-                        <a href="{{ url('/home') }}">Home</a>
-                    @else
-                        <a href="{{ url('/login') }}">Login</a>
-                        <a href="{{ url('/register') }}">Register</a>
-                    @endif
-                </div>
-            @endif
-
-            <div class="content">
-                <div class="title m-b-md">
-                    Laravel
-                </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+            <div class="col-md-3">
+                <h2>User</h2>
+                <ul>
+                    <li>Upcoming events Slack Notification Event</li>
+                    <li>Meeting Checkin </li>
+                </ul>
             </div>
         </div>
-    </body>
-</html>
+    </section>
+
+    <hr class="between-sections">
+
+    <section class="section feature-box" id="best-features">
+        <h1 class="section-heading wow fadeIn" data-wow-delay="0.2s">Why are we so great?</h1>
+        <p class="section-description lead wow fadeIn" data-wow-delay="0.4s">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam. Quia, minima?</p>
+        <div class="row features-small">
+            <div class="col-md-4 wow fadeInRight" data-wow-delay="0.2s">
+                <div class="row">
+                    <div class="col-2">
+                        <i class="fa fa-flag-checkered indigo-text"></i>
+                    </div>
+                    <div class="col-10">
+                        <h4 class="feature-title">International</h4>
+                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
+                        <div style="height:30px"></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-2">
+                        <i class="fa fa-flask blue-text"></i>
+                    </div>
+                    <div class="col-10">
+                        <h4 class="feature-title">Experimental</h4>
+                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
+                        <div style="height:30px"></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-2">
+                        <i class="fa fa-glass cyan-text"></i>
+                    </div>
+                    <div class="col-10">
+                        <h4 class="feature-title">Relaxing</h4>
+                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
+                        <div style="height:30px"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 m-b-r center-on-small-only wow fadeInRight" data-wow-delay="0.3s">
+                <img src="https://mdbootstrap.com/images/mockups/header-iphone.png" alt="" class="z-depth-0">
+            </div>
+
+            <div class="col-md-4 wow fadeInRight" data-wow-delay="0.4s">
+                <div class="row">
+                    <div class="col-2">
+                        <i class="fa fa-heart red-text"></i>
+                    </div>
+                    <div class="col-10">
+                        <h4 class="feature-title">Beloved</h4>
+                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
+                        <div style="height:30px"></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-2">
+                        <i class="fa fa-flash orange-text"></i>
+                    </div>
+                    <div class="col-10">
+                        <h4 class="feature-title">Rapid</h4>
+                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
+                        <div style="height:30px"></div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-2">
+                        <i class="fa fa-magic lime-text"></i>
+                    </div>
+                    <div class="col-10">
+                        <h4 class="feature-title">Magical</h4>
+                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima assumenda deleniti hic.</p>
+                        <div style="height:30px"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+@stop
