@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Can you see me?
+                    Can you see me now?
                 </div>
 
                 <div class="links">
