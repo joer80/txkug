@@ -9,12 +9,10 @@
         </a>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="nav navbar-nav smooth-scroll mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link waves-effect waves-light" href="#home">Home <span class="sr-only">(current)</span></a>
+                <li class="nav-item {{ set_active('/') }}">
+                    <a class="nav-link waves-effect waves-light" href="/">Home <span class="sr-only">(current)</span></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link waves-effect waves-light" href="#best-features">Features</a>
-                </li>
+
             </ul>
 
             <ul class="navbar-nav nav-flex-icons">

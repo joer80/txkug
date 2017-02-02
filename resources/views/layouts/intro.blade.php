@@ -16,8 +16,7 @@
                                 <hr class="hr-dark">
                             </li>
                             <li>
-                                {{--<a class="btn btn-primary btn-lg wow fadeInLeft" data-wow-delay="0.2s">Join Our Slack Team</a>--}}
-                                <button type="button" class="btn btn-secondary wow fadeInUp" data-wow-delay="0.2s" data-toggle="modal" data-target="#joinSlackTeamModal">
+                                <button type="button" class="btn btn-danger wow fadeInUp" data-wow-delay="0.2s" data-toggle="modal" data-target="#joinSlackTeamModal">
                                     Join Our Slack Team
                                 </button>
                             </li>
