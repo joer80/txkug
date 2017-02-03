@@ -18,7 +18,6 @@ class SocialController extends Controller
 
     public function getSocialRedirect( $provider )
     {
-
         $providerKey = Config::get('services.' . $provider);
 
         if (empty($providerKey)) {
@@ -28,7 +27,9 @@ class SocialController extends Controller
 
         }
 
-        return Socialite::driver( $provider )->redirect();
+//        return Socialite::driver( $provider )->redirect();
+//        return Socialite::with( $provider )->redirect();
+        return Socialite::with('slack')->redirect();
 
     }
 
