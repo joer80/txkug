@@ -9,8 +9,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
         <link href="/css/bootstrap.min.css" rel="stylesheet">
         <link href="/css/mdb.min.css" rel="stylesheet">
-        <link href="/css/custom.css" rel="stylesheet">
-
+        <link href="/css/welcome.css" rel="stylesheet">
         @yield('head_includes')
         <script>
             window.Laravel = {!! json_encode([
@@ -20,7 +19,8 @@
     </head>
     <body>
         <header>
-            @include('layouts.nav')
+            @include('layouts.welcome-nav')
+            @include('layouts.welcome-intro')
         </header>
         <main>
             <div class="container">
