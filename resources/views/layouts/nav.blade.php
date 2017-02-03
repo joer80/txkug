@@ -13,8 +13,8 @@
                     <a class="nav-link waves-effect waves-light" href="/">Home <span class="sr-only">(current)</span></a>
                 </li>
 
-                <li class="nav-item {{ set_active('/blog/') }}">
-                    <a class="nav-link waves-effect waves-light" href="/blog/">Blog</a>
+                <li class="nav-item {{ set_active('/blog') }}">
+                    <a class="nav-link waves-effect waves-light" href="/blog">Blog</a>
                 </li>
 
             </ul>

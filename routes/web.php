@@ -17,7 +17,7 @@ Route::get('/', function () {
 
 Route::get('/', 'WelcomeController@index')->name('welcome');
 
-Route::get('/blog', 'BlogController@bloghome');
+Route::get('/blog', 'BlogController@index');
 
 //Auth::routes();
 
