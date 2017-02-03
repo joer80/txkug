@@ -16,7 +16,7 @@ class UserSeeder extends Seeder{
             'first_name'    => 'TXKuG',
             'last_name'     => 'Admin',
             'email'         => 'contact@txkug.com',
-            'password'      => Hash::make('password'),
+            'password'      => Hash::make('TXKuGNeedsYou!'),
             'token'         => str_random(64),
             'activated'     => true
         ));
