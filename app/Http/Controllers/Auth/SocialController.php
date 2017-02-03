@@ -23,7 +23,7 @@ class SocialController extends Controller
 
         if (empty($providerKey)) {
 
-            return view('pages.status')
+            return view('partials.status')
                 ->with('error','No such provider');
 
         }

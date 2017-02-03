@@ -9,7 +9,7 @@
         </a>
 
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="nav navbar-nav smooth-scroll mr-auto">
+            <ul class="nav navbar-nav mr-auto">
                 <li class="nav-item {{ set_active('/') }}">
                     <a class="nav-link" href="{{ route('welcome.index') }}">Home</a>
                 </li>
@@ -23,7 +23,7 @@
             <ul class="navbar-nav">
                 @if (Auth::guest())
                     <li class="nav-item">
-                        <a class="nav-link" href="https://txkug.dev/social/redirect/slack">Slack Login</a>
+                        <a class="nav-link" href="{{ env('SLACK_REDIRECT') }}">Slack Login</a>
                     </li>
                 @else
                     @if(Auth::user()->hasRole('administrator'))
