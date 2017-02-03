@@ -11,12 +11,9 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Route::get('/', 'WelcomeController@index')->name('welcome');
 
-//Auth::routes();
+Route::get('/social/redirect/{provider}', ['as' => 'social.redirect',   'uses' => 'Auth\SocialController@getSocialRedirect']);
+Route::get('/social/handle/{provider}', ['as' => 'social.handle',     'uses' => 'Auth\SocialController@getSocialHandle']);
 
 Route::get('/user', 'UserController@index')->name('user');
