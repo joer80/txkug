@@ -11,13 +11,12 @@ class UserController extends Controller
 {
     public function index() {
 
-//        $event = Event::with('venue')
-//            ->where('stops_at', '>=', Carbon::now()->toDateTimeString())
-//            ->orderBy('stops_at')
-//            ->first();
+        $event = Event::with('venue')
+            ->where('stops_at', '>=', Carbon::now()->toDateTimeString())
+            ->orderBy('stops_at')
+            ->first();
 
-//        return view('panels.user.home', compact('event'));
-        return view('panels.user.home');
+        return view('panels.user.home', compact('event'));
     }
 
     public function events() {

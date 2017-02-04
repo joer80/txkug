@@ -18,18 +18,17 @@ class SocialController extends Controller
 
     public function getSocialRedirect( $provider )
     {
+
         $providerKey = Config::get('services.' . $provider);
 
         if (empty($providerKey)) {
 
-            return view('partials.status')
+            return view('pages.status')
                 ->with('error','No such provider');
 
         }
 
-//        return Socialite::driver( $provider )->redirect();
-//        return Socialite::with( $provider )->redirect();
-        return Socialite::with('slack')->redirect();
+        return Socialite::driver( $provider )->redirect();
 
     }
 
